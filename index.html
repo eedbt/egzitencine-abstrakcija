@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="lt">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Egzistencinė abstrakcija</title>
 
 <style>
@@ -10,30 +11,50 @@ body {
     background: white;
     color: black;
     margin: 0;
+    padding: 0 10px; /* add some padding on small screens */
 }
 
 .container {
-    max-width: 480px; /* narrower = better line breaks */
-    margin: 100px auto;
+    max-width: 480px;
+    margin: 50px auto; /* smaller margin on top for mobile */
+    padding: 0 10px;
 }
 
 h1 {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 p {
     font-size: 18px;
-    line-height: 1.9;
+    line-height: 1.8;
     text-align: left;
-    text-indent: 40px;
-    margin-bottom: 25px;
+    text-indent: 20px; /* smaller indent for mobile */
+    margin-bottom: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-indent: 15px;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        margin: 30px auto;
+    }
 }
 </style>
 
 </head>
-
 <body>
 
 <div class="container">
